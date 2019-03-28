@@ -1,0 +1,42 @@
+<html lang="en-gb">
+    <head>
+        <style>
+            .page {
+                display: block;
+                margin: 1em;
+                background: rgba(0,0,0,0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut nisl tellus. Nulla lacinia, urna nec finibus rutrum, augue odio luctus urna, eu egestas quam est in urna. Nullam congue justo vel venenatis varius. Nullam sed eros dapibus erat iaculis tristique a et nibh. Fusce condimentum at turpis et tristique. Sed malesuada ligula id ligula aliquam scelerisque. Integer bibendum elit nec condimentum eleifend. Duis sit amet pharetra nulla. Mauris sed feugiat ex, a tristique diam. Sed luctus, nisi a ultrices ultricies, dolor mauris consequat leo, sed vulputate tellus massa vitae ligula. Nullam fringilla faucibus sapien id luctus. Vivamus eu sodales diam, eu ultricies tortor.
+                <br />
+                Aliquam erat volutpat. Sed erat ante, accumsan et leo a, iaculis cursus mauris. Cras laoreet nisi non odio viverra pretium. Nulla facilisi. Fusce erat lacus, imperdiet eget ante vel, vestibulum luctus sem. Donec pulvinar porttitor placerat. Mauris et efficitur ligula, sed dignissim nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sollicitudin elit et velit sagittis, id luctus est laoreet. Ut in sollicitudin turpis, non egestas nisl. Donec turpis neque, condimentum sit amet turpis et, imperdiet posuere odio. Sed accumsan porta ultricies. In lorem leo, sollicitudin in interdum eget, semper eu diam.
+                <br />
+                Etiam quis hendrerit quam. Sed molestie tempor venenatis. Mauris ac dictum ligula. Integer sit amet iaculis lectus, non viverra arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tristique venenatis dignissim. Aliquam eget nisl sed elit pretium finibus quis sit amet sapien. Ut eu ligula non libero congue aliquam eu ut leo.                
+        </div>
+        <div class="page">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut nisl tellus. Nulla lacinia, urna nec finibus rutrum, augue odio luctus urna, eu egestas quam est in urna. Nullam congue justo vel venenatis varius. Nullam sed eros dapibus erat iaculis tristique a et nibh. Fusce condimentum at turpis et tristique. Sed malesuada ligula id ligula aliquam scelerisque. Integer bibendum elit nec condimentum eleifend. Duis sit amet pharetra nulla. Mauris sed feugiat ex, a tristique diam. Sed luctus, nisi a ultrices ultricies, dolor mauris consequat leo, sed vulputate tellus massa vitae ligula. Nullam fringilla faucibus sapien id luctus. Vivamus eu sodales diam, eu ultricies tortor.
+        </div>
+        <div class="page">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut nisl tellus. Nulla lacinia, urna nec finibus rutrum, augue odio luctus urna, eu egestas quam est in urna. Nullam congue justo vel venenatis varius. Nullam sed eros dapibus erat iaculis tristique a et nibh. Fusce condimentum at turpis et tristique. Sed malesuada ligula id ligula aliquam scelerisque. Integer bibendum elit nec condimentum eleifend. Duis sit amet pharetra nulla. Mauris sed feugiat ex, a tristique diam. Sed luctus, nisi a ultrices ultricies, dolor mauris consequat leo, sed vulputate tellus massa vitae ligula. Nullam fringilla faucibus sapien id luctus. Vivamus eu sodales diam, eu ultricies tortor.
+                <br />
+                Aliquam erat volutpat. Sed erat ante, accumsan et leo a, iaculis cursus mauris. Cras laoreet nisi non odio viverra pretium. Nulla facilisi. Fusce erat lacus, imperdiet eget ante vel, vestibulum luctus sem. Donec pulvinar porttitor placerat. Mauris et efficitur ligula, sed dignissim nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sollicitudin elit et velit sagittis, id luctus est laoreet. Ut in sollicitudin turpis, non egestas nisl. Donec turpis neque, condimentum sit amet turpis et, imperdiet posuere odio. Sed accumsan porta ultricies. In lorem leo, sollicitudin in interdum eget, semper eu diam.
+        </div>
+        <script>
+            var pages = document.getElementsByClassName('page');
+            var pagePrintHeight = 100;
+            for (var index = 0; index < pages.length; index++) {
+
+                var page = pages[index];
+                var pageOriginalHeight = page.offsetHeight;
+                var pageAdaptedHeight = Math.ceil(pageOriginalHeight/pagePrintHeight) * pagePrintHeight;
+                
+                page.style.height = pageAdaptedHeight + 'px';
+
+                console.log(page, pageOriginalHeight, pageAdaptedHeight);
+            }
+        </script>
+    </body>
+</html>
