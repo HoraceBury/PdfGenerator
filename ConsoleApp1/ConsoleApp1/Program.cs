@@ -21,9 +21,11 @@ namespace ConsoleApp1
 
         public static void GeneratePdf()
         {
+            var page = "plain";
+
             var slnpath = $@"{Directory.GetCurrentDirectory()}\..\..\..\..";
-            var htmlpath = $@"{slnpath}\HtmlTemplates\HTMLPage1.html";
-            var pdfpath = $@"{slnpath}\PdfFiles\Azam.pdf";
+            var htmlpath = $@"{slnpath}\HtmlTemplates\{page}.html";
+            var pdfpath = $@"{slnpath}\PdfFiles\{page}.pdf";
             var dllpath = $@"{slnpath}\DinkNative64bit\libwkhtmltox.dll";
 
             var html = new StringBuilder(File.ReadAllText(htmlpath));

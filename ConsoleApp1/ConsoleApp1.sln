@@ -10,6 +10,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HtmlTemplates", "HtmlTemplates", "{4734EE48-3A07-4D0A-BC76-FE906B6BEC8A}"
 	ProjectSection(SolutionItems) = preProject
 		HtmlTemplates\HTMLPage1.html = HtmlTemplates\HTMLPage1.html
+		HtmlTemplates\plain.html = HtmlTemplates\plain.html
+		HtmlTemplates\test.html = HtmlTemplates\test.html
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DinkNative64bit", "DinkNative64bit", "{6CE9E9B5-5F07-4A63-93FA-A1471258CC52}"
@@ -24,7 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PdfFiles", "PdfFiles", "{18
 		PdfFiles\Azam.pdf = PdfFiles\Azam.pdf
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor2Pdf", "Razor2Pdf\Razor2Pdf.csproj", "{61CBC945-24BB-4DFD-8911-FDA8094819BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Razor2Pdf", "Razor2Pdf\Razor2Pdf.csproj", "{61CBC945-24BB-4DFD-8911-FDA8094819BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RazorPages", "RazorPages", "{6E154E56-A2A5-4000-BB80-66723E12652D}"
 EndProject

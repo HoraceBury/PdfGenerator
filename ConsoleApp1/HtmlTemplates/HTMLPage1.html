@@ -3,10 +3,16 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <style>
+        body {
+            font-family: 'Arial Unicode MS';
+            font-size: 12pt;
+        }
+
         .page {
             display: block;
-            margin: 1em;
+            /*margin: 1em;*/
             overflow: hidden;
+            page-break-inside: avoid;
         }
 
         .odd {
@@ -16,9 +22,13 @@
         .even {
             background-color: azure;
         }
+
+        .break {
+            background-color: red;
+        }
     </style>
 </head>
-<body style="font-family: 'Arial Unicode MS'; font-size: 12pt;">
+<body>
     <div class="page odd">
         <div style="width: 100%; float: right;">
             <p style="float: right;">
@@ -81,6 +91,9 @@
                 Calaborous Ltd.
             </p>
         </div>
+    </div>
+    <div class="page break">
+        <br />&nbsp;<br />
     </div>
     <div class="page even">
         <div style="width: 100%; float: right;">
@@ -196,78 +209,81 @@
                 Calaborous Ltd.
             </p>
         </div>
-        <div class="page odd">
-            <div style="width: 100%; float: right;">
-                <p style="float: right;">
-                    <br />
-                    Bon Tito<br />
-                    ZANDASH<br />
-                    DOM<br /><br />
-                    01 fuon 2001
-                </p>
+    </div>
+    <div class="page break">
+        <br />&nbsp;<br />
+    </div>
+    <div class="page odd">
+        <div style="width: 100%; float: right;">
+            <p style="float: right;">
+                <br />
+                Bon Tito<br />
+                ZANDASH<br />
+                DOM<br /><br />
+                01 fuon 2001
+            </p>
+        </div>
+        <div style="width: 100%; float: right;">
+            <p>
+                Estimados Sres.,<br /><br />
+                <strong>¡Bienvenidos!</strong><br /><br />
+                Sed luctus, nisi a ultrices ultricies, dolor mauris consequat leo, sed vulputate tellus massa vitae ligula.
+            </p>
+        </div>
+        <div style="width: 100%; float: right;">
+            <div style="width: 5%; float: left;">
+                &nbsp;
             </div>
-            <div style="width: 100%; float: right;">
+            <div style="width: 95%; float: left;">
                 <p>
-                    Estimados Sres.,<br /><br />
-                    <strong>¡Bienvenidos!</strong><br /><br />
-                    Sed luctus, nisi a ultrices ultricies, dolor mauris consequat leo, sed vulputate tellus massa vitae ligula.
+                    Etiam quis hendrerit quam. Sed molestie tempor venenatis:
                 </p>
             </div>
-            <div style="width: 100%; float: right;">
-                <div style="width: 5%; float: left;">
-                    &nbsp;
-                </div>
-                <div style="width: 95%; float: left;">
-                    <p>
-                        Etiam quis hendrerit quam. Sed molestie tempor venenatis:
-                    </p>
-                </div>
-                <div style="width: 60%; float: right;">
-                    <p>
-                        Calaborous Ltd.<br />
-                        TRITANIA 50-56<br />
-                        SAN JUAN<br />
-                        Barcelona<br />
-                        12345<br /><br />
-                        <strong>987654321</strong>
-                    </p>
-                </div>
-                <div style="width: 100%; float: right;">
-                    Su  código de cliente es:<br />
-                </div>
-                <div style="width: 50%; float: right;">
-                    <strong>1443326</strong>
-                </div>
-            </div>
-            <div style="width: 100%; float: right;">
+            <div style="width: 60%; float: right;">
                 <p>
-                    Etiam quis hendrerit quam. Sed molestie tempor venenatis. Mauris ac dictum ligula. Integer sit amet iaculis lectus, non viverra arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tristique venenatis dignissim. Aliquam eget nisl sed elit pretium finibus quis sit amet sapien. Ut eu ligula non libero congue aliquam eu ut leo.
-                </p><p>
-                    Etiam quis hendrerit quam. Sed molestie tempor venenatis. Mauris ac dictum ligula. Integer sit amet iaculis lectus, non viverra arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tristique venenatis dignissim. Aliquam eget nisl sed elit pretium finibus quis sit amet sapien. Ut eu ligula non libero congue aliquam eu ut leo.
-                </p><p>
-                    Etiam quis hendrerit quam. Sed molestie tempor venenatis. Mauris ac dictum ligula. Integer sit amet iaculis lectus, non viverra arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tristique venenatis dignissim. Aliquam eget nisl sed elit pretium finibus quis sit amet sapien. Ut eu ligula non libero congue aliquam eu ut leo.
-                </p><p>
-                    Etiam quis hendrerit quam. Sed molestie tempor venenatis. Mauris ac dictum ligula. Integer sit amet iaculis lectus, non viverra arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tristique venenatis dignissim. Aliquam eget nisl sed elit pretium finibus quis sit amet sapien. Ut eu ligula non libero congue aliquam eu ut leo.
-                </p><p>
-                    Aquilas,
-                </p><p>
-                    Sand Man<br />
-                    SENTIMONTO S.L.<br />
-                    Email: test@gmail.com<br /><br />
-                </p><p>
-                    Calaborous Ltd.
+                    Calaborous Ltd.<br />
+                    TRITANIA 50-56<br />
+                    SAN JUAN<br />
+                    Barcelona<br />
+                    12345<br /><br />
+                    <strong>987654321</strong>
                 </p>
+            </div>
+            <div style="width: 100%; float: right;">
+                Su  código de cliente es:<br />
+            </div>
+            <div style="width: 50%; float: right;">
+                <strong>1443326</strong>
             </div>
         </div>
+        <div style="width: 100%; float: right;">
+            <p>
+                Etiam quis hendrerit quam. Sed molestie tempor venenatis. Mauris ac dictum ligula. Integer sit amet iaculis lectus, non viverra arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tristique venenatis dignissim. Aliquam eget nisl sed elit pretium finibus quis sit amet sapien. Ut eu ligula non libero congue aliquam eu ut leo.
+            </p><p>
+                Etiam quis hendrerit quam. Sed molestie tempor venenatis. Mauris ac dictum ligula. Integer sit amet iaculis lectus, non viverra arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tristique venenatis dignissim. Aliquam eget nisl sed elit pretium finibus quis sit amet sapien. Ut eu ligula non libero congue aliquam eu ut leo.
+            </p><p>
+                Etiam quis hendrerit quam. Sed molestie tempor venenatis. Mauris ac dictum ligula. Integer sit amet iaculis lectus, non viverra arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tristique venenatis dignissim. Aliquam eget nisl sed elit pretium finibus quis sit amet sapien. Ut eu ligula non libero congue aliquam eu ut leo.
+            </p><p>
+                Etiam quis hendrerit quam. Sed molestie tempor venenatis. Mauris ac dictum ligula. Integer sit amet iaculis lectus, non viverra arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tristique venenatis dignissim. Aliquam eget nisl sed elit pretium finibus quis sit amet sapien. Ut eu ligula non libero congue aliquam eu ut leo.
+            </p><p>
+                Aquilas,
+            </p><p>
+                Sand Man<br />
+                SENTIMONTO S.L.<br />
+                Email: test@gmail.com<br /><br />
+            </p><p>
+                Calaborous Ltd.
+            </p>
+        </div>
     </div>
-    <script language="javascript">
+    <!--<script language="javascript">
         var pages = document.getElementsByClassName('page');
         var pagePrintHeight = 1308.0;
         for (var index = 0; index < pages.length; index++) {
             var pageOriginalHeight = pages[index].offsetHeight;
             var pageAdaptedHeight = Math.ceil(pageOriginalHeight / pagePrintHeight) * pagePrintHeight;
-            pages[index].style.height = pageAdaptedHeight + 'px';
+            //pages[index].style.height = pageAdaptedHeight + 'px';
         }
-    </script>
+    </script>-->
 </body>
 </html>
