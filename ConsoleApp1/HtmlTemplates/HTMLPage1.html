@@ -10,9 +10,8 @@
 
         .page {
             display: block;
-            /*margin: 1em;*/
             overflow: hidden;
-            page-break-inside: avoid;
+            page-break-after: always;
         }
 
         .odd {
@@ -213,7 +212,7 @@
     <div class="page break">
         <br />&nbsp;<br />
     </div>
-    <div class="page odd">
+    <div class=" odd">
         <div style="width: 100%; float: right;">
             <p style="float: right;">
                 <br />
@@ -276,14 +275,5 @@
             </p>
         </div>
     </div>
-    <!--<script language="javascript">
-        var pages = document.getElementsByClassName('page');
-        var pagePrintHeight = 1308.0;
-        for (var index = 0; index < pages.length; index++) {
-            var pageOriginalHeight = pages[index].offsetHeight;
-            var pageAdaptedHeight = Math.ceil(pageOriginalHeight / pagePrintHeight) * pagePrintHeight;
-            //pages[index].style.height = pageAdaptedHeight + 'px';
-        }
-    </script>-->
 </body>
 </html>
